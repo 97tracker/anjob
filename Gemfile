@@ -73,5 +73,5 @@ end
 
 group :production do
   gem 'pg', '~> 0.21.00'
-  grm 'rails_12factor'
+  gem 'rails_12factor'
 end
