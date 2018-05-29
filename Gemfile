@@ -68,4 +68,10 @@ group :development, :test do
   gem 'better_errors'
   gem 'guard'
   gem 'guard-livereload'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg', '0.21.0'
+  gem 'rails_12factor'
 end
