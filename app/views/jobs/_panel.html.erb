@@ -1,0 +1,37 @@
+<nav class="panel">
+  <p class="text-uppercase has-text-gray pv1 f6">Filtrer par type</p>
+
+  <ul class="mb3 pa0">
+    <li class="pv1">
+      <%= link_to 'Tout', jobs_path, class: "button is-fullwidth is-dark" %>
+    </li>
+
+    <li class="pv1">
+      <%= link_to 'Temps-plein', jobs_path(job_type: "Temps-plein"), class: "button is-fullwidth is-primary" %>
+    </li>
+
+    <li class="pv1">
+      <%= link_to 'Temps-partiel', jobs_path(job_type: "Temps-partiel"), class: "button is-fullwidth is-link" %>
+    </li>
+
+    <li class="pv1">
+      <%= link_to 'Job-ete', jobs_path(job_type: "Job-ete"), class: "button is-fullwidth is-warning" %>
+    </li>
+
+    <li class="pv1">
+      <%= link_to 'CDI', jobs_path(job_type: "CDI"), class: "button is-fullwidth is-primary" %>
+    </li>
+
+    <li class="pv1">
+      <%= link_to 'CDD', jobs_path(job_type: "CDD"), class: "button is-fullwidth is-link" %>
+    </li>
+
+    <li class="pv1">
+      <%= link_to 'Cash', jobs_path(job_type: "Cash"), class: "button is-fullwidth is-dark" %>
+    </li>
+
+    <li class="pv1">
+      <%= link_to 'Independant', jobs_path(job_type: "Independant"), class: "button is-fullwidth is-warning" %>
+    </li>
+  </ul>
+</nav>

@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/mdeering/gravatar_image_tag.git
+  revision: c02351f7d6649e2346394e33164a7154e671ec19
+  specs:
+    gravatar_image_tag (1.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -48,7 +54,7 @@ GEM
       rack (>= 0.9.0)
     bindex (0.5.0)
     builder (3.2.3)
-    bulma-rails (0.7.1)
+    bulma-rails (0.6.2)
       sass (~> 3.2)
     byebug (10.0.2)
     capybara (2.18.0)
@@ -90,6 +96,8 @@ GEM
     faraday (0.15.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.23)
+    figaro (1.1.1)
+      thor (~> 0.14)
     formatador (0.2.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -205,9 +213,9 @@ GEM
       connection_pool (~> 2.2, >= 2.2.0)
       rack-protection (>= 1.5.0)
       redis (>= 3.3.5, < 5)
-    simple_form (4.0.1)
-      actionpack (>= 5.0)
-      activemodel (>= 5.0)
+    simple_form (3.5.1)
+      actionpack (> 4, < 5.2)
+      activemodel (> 4, < 5.2)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -253,12 +261,14 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors
-  bulma-rails
+  bulma-rails (~> 0.6.2)
   byebug
   capybara (~> 2.13)
   carrierwave (~> 1.0)
   coffee-rails (~> 4.2)
-  devise
+  devise (~> 4.4.3)
+  figaro
+  gravatar_image_tag!
   guard
   guard-livereload
   jbuilder (~> 2.5)
@@ -268,12 +278,12 @@ DEPENDENCIES
   rails (~> 5.1.5)
   sass-rails (~> 5.0)
   selenium-webdriver
-  sidekiq
-  simple_form
+  sidekiq (~> 5.0)
+  simple_form (~> 3.5.1)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
-  stripe (~> 3.15)
+  stripe (~> 3.11)
   trix (~> 0.11.1)
   turbolinks (~> 5)
   tzinfo-data

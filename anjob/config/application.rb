@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module Anjob
   class Application < Rails::Application
     config.active_job.queue_adapter = :sidekiq
-    config.application_name = 'AnJob Antilles'
+    config.application_name = 'Web Job Antilles'
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
