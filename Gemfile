@@ -9,6 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -67,10 +68,5 @@ group :development, :test do
   gem 'guard'
   gem 'guard-livereload'
   #gem 'sqlite3', '~> 1.3.13'
-  gem 'sqlite3'
-end
-
-group :production do
-    gem 'rails_12factor'
-        gem 'pg'
+  #gem 'sqlite3'
 end
