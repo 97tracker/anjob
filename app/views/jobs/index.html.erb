@@ -25,13 +25,13 @@
 
         <% if current_user.try(:admin) || job_author(job) %>
           <ul class="pv3">
-            <li class="inline-block f6">Admin controls: </li>
+            <li class="inline-block f6">Votre annonce: </li>
             <li class="inline-block">
-              <%= link_to 'View', job, class: 'button is-small is-link is-outlined' %></li>
+              <%= link_to 'Consulter', job, class: 'button is-small is-link is-outlined' %></li>
             <li class="inline-block">
-              <%= link_to 'Edit', edit_job_path(job), class: 'button is-small is-link is-outlined' %></li>
+              <%= link_to 'Modifier', edit_job_path(job), class: 'button is-small is-link is-outlined' %></li>
             <li class="inline-block">
-              <%= link_to 'Delete', job, method: :delete, data: { confirm: 'Are you sure?' }, class: 'button is-small is-link is-outlined' %></li>
+              <%= link_to 'Supprimer', job, method: :delete, data: { confirm: 'Confirmer' }, class: 'button is-small is-link is-outlined' %></li>
           </ul>
         <% end %>
 

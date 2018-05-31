@@ -3,13 +3,13 @@
 
       <div class="field">
         <div class="control">
-        <%= f.input :title, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, placeholder: "Frontend Developer" %>
+        <%= f.input :title, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, label: "Intitulé", placeholder: "Gestionnaire des stocks" %>
         </div>
       </div>
 
       <div class="field">
         <div class="control">
-          <%= f.input :apply_url, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }  %>
+          <%= f.input :apply_url, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, label: "Lien de l'annonce", placeholder: "http://www.entreprise.com/annonce"  %>
         </div>
       </div>
 
@@ -17,10 +17,10 @@
     <div class="columns">
       <div class="field column is-4">
         <div class="control">
-          <label class="label">Job Type:</label>
+          <label class="label">Type de contrat:</label>
           <div class="control has-icons-left">
             <span class="select">
-              <%= f.input_field :job_type, collection: Job::JOB_TYPES, prompt: "Select a job type" %>
+              <%= f.input_field :job_type, collection: Job::JOB_TYPES, prompt: "Sélectionnez un type" %>
             </span>
             <span class="icon is-small is-left">
               <i class="fa fa-briefcase"></i>
@@ -33,7 +33,7 @@
 
         <div class="field">
           <div class="control">
-            <%= f.input :location, require: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, hint: 'Examples: "San Francisco, CA", "Seattle", "Anywhere"' %>
+            <%= f.input :location, require: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, label: "Adresse", hint: 'Exemple: "Darty, La Jaille, Baie-Mahault"' %>
           </div>
         </div>
 
@@ -41,7 +41,7 @@
           <div class="control">
             <label for="job[remote_ok]">
               <%= f.input :remote_ok, required: false, input_html: { class: "checkbox"}, wrapper: false, label: false %>
-              Work can be done remotely
+              Vous pouvez travailler de chez vous.
             </label><i class="fa fa-wifi"></i>
           </div>
         </div>
@@ -50,7 +50,7 @@
 
       <div class="field">
         <div class="control">
-          <%= f.input :description, required: true, input_html: { class: "textarea" }, wrapper: false, label_html: { class: "label" } %>
+          <%= f.input :description, required: true, input_html: { class: "textarea" }, wrapper: false, label_html: { class: "label" }, placeholder: "Nous vous proposons un poste de...." %>
         </div>
       </div>
 
@@ -59,13 +59,13 @@
 
       <div class="field column">
         <div class="control">
-          <%= f.input :job_author, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, label: "Company" %>
+          <%= f.input :job_author, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, label: "Entreprise", placeholder: "Dénomination de l'entreprise" %>
         </div>
       </div>
 
       <div class="field column">
         <div class="control">
-          <%= f.input :url, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, label: "Company Website", placeholder: "http://company.com" %>
+          <%= f.input :url, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, label: "Site web", placeholder: "http://www.entreprise.com" %>
         </div>
       </div>
 
@@ -74,13 +74,13 @@
     <div class="columns">
       <div class="field column is-4">
         <div class="control">
-          <label class="label">Logo Image</label>
+          <label class="label">Votre logo (option)</label>
           <div class="file">
             <label class="file-label">
               <%= f.input :avatar, as: :file, required: false, input_html: { class:"file-input job-avatar" }, label: false, wrapper: false %>
                 <span class="file-cta">
                   <span class="file-icon"><i class="fa fa-upload"></i></span>
-                  <span class="file-label">Choose a file…</span>
+                  <span class="file-label">Choisissez un fichier…</span>
                 </span>
             </label>
           </div>

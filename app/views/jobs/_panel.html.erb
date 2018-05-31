@@ -1,21 +1,22 @@
+
 <nav class="panel">
   <p class="text-uppercase has-text-gray pv1 f6">Filtrer par type</p>
 
   <ul class="mb3 pa0">
     <li class="pv1">
-      <%= link_to 'Tout', jobs_path, class: "button is-fullwidth is-dark" %>
+      <%= link_to 'Toutes les offres', jobs_path, class: "button is-fullwidth is-dark" %>
     </li>
 
     <li class="pv1">
-      <%= link_to 'Temps-plein', jobs_path(job_type: "Temps-plein"), class: "button is-fullwidth is-primary" %>
+      <%= link_to 'Temps plein', jobs_path(job_type: "Temps-plein"), class: "button is-fullwidth is-primary" %>
     </li>
 
     <li class="pv1">
-      <%= link_to 'Temps-partiel', jobs_path(job_type: "Temps-partiel"), class: "button is-fullwidth is-link" %>
+      <%= link_to 'Temps partiel', jobs_path(job_type: "Temps-partiel"), class: "button is-fullwidth is-link" %>
     </li>
 
     <li class="pv1">
-      <%= link_to 'Job-ete', jobs_path(job_type: "Job-ete"), class: "button is-fullwidth is-warning" %>
+      <%= link_to 'Job Ete', jobs_path(job_type: "Job-ete"), class: "button is-fullwidth is-warning" %>
     </li>
 
     <li class="pv1">
@@ -27,7 +28,7 @@
     </li>
 
     <li class="pv1">
-      <%= link_to 'Cash', jobs_path(job_type: "Cash"), class: "button is-fullwidth is-dark" %>
+      <%= link_to 'Stage', jobs_path(job_type: "Stage"), class: "button is-fullwidth is-dark" %>
     </li>
 
     <li class="pv1">

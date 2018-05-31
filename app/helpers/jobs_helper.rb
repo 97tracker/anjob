@@ -11,8 +11,8 @@ module JobsHelper
       content_tag :span, "#{job_type}", class: "tag is-info"
     elsif job_type == "CDD"
       content_tag :span, "#{job_type}", class: "tag is-primary"
-    elsif job_type == "Cash"
-      content_tag :span, "#{job_type}", class: "tag is-warning"
+    elsif job_type == "Stage"
+      content_tag :span, "#{job_type}", class: "tag is-dark"
     elsif job_type == "Independant"
       content_tag :span, "#{job_type}", class: "tag is-info"
     else

@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.5'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+gem 'bootstrap-sass'
+gem 'jquery-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -62,7 +64,8 @@ gem 'carrierwave', '~> 1.0'
 gem 'mini_magick', '~> 4.8'
 gem 'stripe', '~> 3.11'
 gem 'trix', '~> 0.11.1'
-gem "figaro"
+gem 'figaro'
+gem 'devise-i18n'
 gem 'pg'
 
 group :development, :test do
